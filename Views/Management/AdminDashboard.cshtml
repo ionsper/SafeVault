@@ -1,0 +1,30 @@
+@model IEnumerable<SafeVault.Models.User>
+
+<h2>Admin Dashboard</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var u in Model)
+    {
+        <tr>
+            <td>@u.Username</td>
+            <td>@u.Email</td>
+            <td>
+                <form asp-controller="Admin" asp-action="DeleteUser" method="post" class="d-inline">
+                    <input type="hidden" name="id" value="@u.UserID" />
+                    <button type="submit" class="btn btn-sm btn-danger" title="Delete user" onclick="return confirm('Delete user @u.Username?');">
+                        <span class="bi bi-trash"></span> Delete
+                    </button>
+                </form>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

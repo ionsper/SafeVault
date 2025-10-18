@@ -1,0 +1,15 @@
+﻿@using System.Diagnostics
+@model SafeVault.Models.ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+    var requestId = Activity.Current?.Id ?? ViewContext.HttpContext.TraceIdentifier;
+}
+
+<h1>Something went wrong</h1>
+<p>We're sorry — an unexpected error occurred while processing your request.</p>
+
+<p>
+    <strong>Request ID:</strong> <code>@requestId</code>
+</p>
+
+<a class="btn btn-primary" href="@Url.Action("Index", "Home")">Return home</a>

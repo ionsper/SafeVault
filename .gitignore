@@ -1,0 +1,47 @@
+# Build and publish folders
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code settings
+.vscode/
+
+# Logs
+logs.txt
+*.log
+*.txt
+
+# NuGet packages
+*.nupkg
+.nuget/
+packages/
+
+# Dotnet environment files
+.env
+
+# Swagger generated files
+swagger/
+*.swagger
+
+# Other
+*.vs/
+
+# Ignore coverage reports
+coverage/
+*.coverage
+*.coveragexml
+
+# Ignore all appsettings files
+appsettings*
+
+# Ignore all .txt files except the repository license file
+# Keep the existing "*.txt" rule above; add exceptions below so Git will track the license.
+!/LICENSE.txt
+!LICENSE.txt
+
