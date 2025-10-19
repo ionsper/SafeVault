@@ -165,6 +165,6 @@ This repository is part of an educational course. If you'd like to suggest impro
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the MIT License.
 
 ---
