@@ -28,7 +28,7 @@ This project is an assignment for the course: Security and Authentication by Mic
 
 ## Run (development)
 
-Open PowerShell in the project root (the folder that contains `14. SafeVault.csproj`) and run:
+Open PowerShell in the project root (the folder that contains `SafeVault.csproj`) and run:
 
 ```powershell
 dotnet restore; dotnet run
